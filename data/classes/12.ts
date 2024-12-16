@@ -1580,6 +1580,11 @@ export const chemistry = {
           thumbnail: "/images/solid_state_thumbnail1.jpg",
           channel: "Chemistry Channel 1",
         },
+        {
+          path: "/dummy/path/solid-state/opt2",
+          thumbnail: "/images/solid_state_thumbnail2.jpg",
+          channel: "Chemistry Channel 2",
+        },
       ],
     },
     {
@@ -1589,6 +1594,11 @@ export const chemistry = {
           path: "/dummy/path/solutions/opt1",
           thumbnail: "/images/solutions_thumbnail1.jpg",
           channel: "Chemistry Channel 3",
+        },
+        {
+          path: "/dummy/path/solutions/opt2",
+          thumbnail: "/images/solutions_thumbnail2.jpg",
+          channel: "Chemistry Channel 4",
         },
       ],
     },
@@ -1600,6 +1610,11 @@ export const chemistry = {
           thumbnail: "/images/electrochemistry_thumbnail1.jpg",
           channel: "Chemistry Channel 5",
         },
+        {
+          path: "/dummy/path/electrochemistry/opt2",
+          thumbnail: "/images/electrochemistry_thumbnail2.jpg",
+          channel: "Chemistry Channel 6",
+        },
       ],
     },
     {
@@ -1609,6 +1624,11 @@ export const chemistry = {
           path: "/dummy/path/chemical-kinetics/opt1",
           thumbnail: "/images/chemical_kinetics_thumbnail1.jpg",
           channel: "Chemistry Channel 7",
+        },
+        {
+          path: "/dummy/path/chemical-kinetics/opt2",
+          thumbnail: "/images/chemical_kinetics_thumbnail2.jpg",
+          channel: "Chemistry Channel 8",
         },
       ],
     },
@@ -1620,6 +1640,11 @@ export const chemistry = {
           thumbnail: "/images/surface_chemistry_thumbnail1.jpg",
           channel: "Chemistry Channel 9",
         },
+        {
+          path: "/dummy/path/surface-chemistry/opt2",
+          thumbnail: "/images/surface_chemistry_thumbnail2.jpg",
+          channel: "Chemistry Channel 10",
+        },
       ],
     },
     {
@@ -1629,6 +1654,11 @@ export const chemistry = {
           path: "/dummy/path/p-block-elements/opt1",
           thumbnail: "/images/p_block_elements_thumbnail1.jpg",
           channel: "Chemistry Channel 11",
+        },
+        {
+          path: "/dummy/path/p-block-elements/opt2",
+          thumbnail: "/images/p_block_elements_thumbnail2.jpg",
+          channel: "Chemistry Channel 12",
         },
       ],
     },
@@ -1640,6 +1670,11 @@ export const chemistry = {
           thumbnail: "/images/d_and_f_block_elements_thumbnail1.jpg",
           channel: "Chemistry Channel 13",
         },
+        {
+          path: "/dummy/path/d-and-f-block-elements/opt2",
+          thumbnail: "/images/d_and_f_block_elements_thumbnail2.jpg",
+          channel: "Chemistry Channel 14",
+        },
       ],
     },
     {
@@ -1649,6 +1684,11 @@ export const chemistry = {
           path: "/dummy/path/coordination-compounds/opt1",
           thumbnail: "/images/coordination_compounds_thumbnail1.jpg",
           channel: "Chemistry Channel 15",
+        },
+        {
+          path: "/dummy/path/coordination-compounds/opt2",
+          thumbnail: "/images/coordination_compounds_thumbnail2.jpg",
+          channel: "Chemistry Channel 16",
         },
       ],
     },
@@ -1660,6 +1700,11 @@ export const chemistry = {
           thumbnail: "/images/haloalkanes_haloarenes_thumbnail1.jpg",
           channel: "Chemistry Channel 17",
         },
+        {
+          path: "/dummy/path/haloalkanes-and-haloarenes/opt2",
+          thumbnail: "/images/haloalkanes_haloarenes_thumbnail2.jpg",
+          channel: "Chemistry Channel 18",
+        },
       ],
     },
     {
@@ -1669,6 +1714,11 @@ export const chemistry = {
           path: "/dummy/path/alcohols-phenols-ethers/opt1",
           thumbnail: "/images/alcohols_phenols_ethers_thumbnail1.jpg",
           channel: "Chemistry Channel 19",
+        },
+        {
+          path: "/dummy/path/alcohols-phenols-ethers/opt2",
+          thumbnail: "/images/alcohols_phenols_ethers_thumbnail2.jpg",
+          channel: "Chemistry Channel 20",
         },
       ],
     },
@@ -1681,6 +1731,12 @@ export const chemistry = {
             "/images/aldehydes_ketones_carboxylic_acids_thumbnail1.jpg",
           channel: "Chemistry Channel 21",
         },
+        {
+          path: "/dummy/path/aldehydes-ketons-and-carboxylic-acids/opt2",
+          thumbnail:
+            "/images/aldehydes_ketones_carboxylic_acids_thumbnail2.jpg",
+          channel: "Chemistry Channel 22",
+        },
       ],
     },
     {
@@ -1691,6 +1747,11 @@ export const chemistry = {
           thumbnail: "/images/amines_thumbnail1.jpg",
           channel: "Chemistry Channel 23",
         },
+        {
+          path: "/dummy/path/amines/opt2",
+          thumbnail: "/images/amines_thumbnail2.jpg",
+          channel: "Chemistry Channel 24",
+        },
       ],
     },
     {
@@ -1700,6 +1761,11 @@ export const chemistry = {
           path: "/dummy/path/biomolecules/opt1",
           thumbnail: "/images/biomolecules_thumbnail1.jpg",
           channel: "Chemistry Channel 25",
+        },
+        {
+          path: "/dummy/path/biomolecules/opt2",
+          thumbnail: "/images/biomolecules_thumbnail2.jpg",
+          channel: "Chemistry Channel 26",
         },
       ],
     },

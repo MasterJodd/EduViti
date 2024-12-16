@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/accordion"; // Ensure these components are exported correctly
 import { navLinks } from "@/data/navlinks"; // Your navigation links data
 import Image from "next/image";
-import { nav_logo, title } from "@/images/main"; // Make sure nav_logo is imported correctly
+import { nav_logo } from "@/images/main"; // Make sure nav_logo is imported correctly
 
 const Hamburger = () => {
   return (

@@ -34,7 +34,7 @@ const HeroSection = () => {
         />
 
         <h1 className="text-[#06d6a0] back-in-left2 2xl:text-3xl text-2xl overlock-regular-italic text-center md:text-start">
-          "Know Together, Grow Together"
+          &quot;Know Together, Grow Together&quot;
         </h1>
         <h2 className="text-2xl font-semibold back-in-left3 text-gray-100 text-center md:text-start">
           Elevate Your Learning journey!
@@ -63,11 +63,11 @@ const HeroSection = () => {
         <div className="sm:hidden block back-in-left ">
           <SearchBar />
         </div>
-        {/* LET'S GROW TOGETHER section */}
+        {/* LETS GROW TOGETHER section */}
         <div className="back-in-left flex items-center justify-center md:justify-start max-w-[480px] w-full">
           <div className="flex-grow bg-[#06d6a0] h-[1px]" />
           <p className="text-md 2xl:text-xl text-white font-semibold text-center mx-4 tracking-wider">
-            LET'S GROW TOGETHER
+            LET&apos;S GROW TOGETHER
           </p>
           <div className="flex-grow bg-[#06d6a0] h-[1px]" />
         </div>

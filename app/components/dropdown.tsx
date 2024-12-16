@@ -35,7 +35,7 @@ const Dropdown = ({ link }: DropdownProps): ReactElement => {
   useEffect(() => {
     // Cleanup timeout on unmount
     return () => clearTimeout(hoverTimeout);
-  }, []);
+  });
 
   return (
     <div

@@ -60,17 +60,17 @@ export const MacbookScroll = ({
   const scaleX = useTransform(
     scrollYProgress,
     [0, 0.3],
-    [1.2, isMobile ? 1.25 : 1.5]
+    [1.2, isMobile ? 1.25 : 1.5],
   );
   const scaleY = useTransform(
     scrollYProgress,
     [0, 0.3],
-    [0.6, isMobile ? 1.25 : 1.5]
+    [0.6, isMobile ? 1.25 : 1.5],
   );
   const translate = useTransform(
     scrollYProgress,
     [0, 1],
-    [0, deviceWidth - 200]
+    [0, deviceWidth - 200],
   );
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
   return (
@@ -121,7 +121,6 @@ export const Lid = ({
   scaleY,
   rotate,
   translate,
-  src,
 }: {
   scaleX: MotionValue<number>;
   scaleY: MotionValue<number>;
@@ -564,13 +563,13 @@ export const KBtn = ({
     <div
       className={cn(
         "p-[0.5px] rounded-[4px]",
-        backlit && "bg-white/[0.2] shadow-xl shadow-white"
+        backlit && "bg-white/[0.2] shadow-xl shadow-white",
       )}
     >
       <div
         className={cn(
           "h-6 w-6 bg-[#0A090D] rounded-[3.5px] flex items-center justify-center",
-          className
+          className,
         )}
         style={{
           boxShadow:
@@ -581,7 +580,7 @@ export const KBtn = ({
           className={cn(
             "text-neutral-200 text-[5px] w-full flex justify-center items-center flex-col",
             childrenClassName,
-            backlit && "text-white"
+            backlit && "text-white",
           )}
         >
           {children}

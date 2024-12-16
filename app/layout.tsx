@@ -52,11 +52,6 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <link
-          rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap"
-          as="style"
-        />
         <link rel="preconnect" href="https://vercel.live" />
         <link rel="dns-prefetch" href="https://vercel.live" />
         <link rel="icon" href="/favicon.ico" />

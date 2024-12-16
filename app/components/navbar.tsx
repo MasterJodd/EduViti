@@ -7,6 +7,7 @@ import { nav_logo } from "@/images/main";
 import Hamburger from "./hamburger";
 import Dropdown from "./dropdown";
 import SearchBar from "./searchBar";
+import Link from "next/link";
 
 // Define props type with homeBtn
 type NavbarProps = {
@@ -45,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ homeBtn }) => {
       }`}
     >
       {/* Logo */}
-      <a href="/">
+      <Link href="/">
         <Image
           src={nav_logo}
           alt="Logo"
@@ -54,7 +55,7 @@ const Navbar: React.FC<NavbarProps> = ({ homeBtn }) => {
           className="ml-4 focus:outline-none"
           priority
         />
-      </a>
+      </Link>
 
       {/* Navigation Links */}
       <div className="relative flex items-center mx-2 md:mx-0">

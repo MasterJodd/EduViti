@@ -20,7 +20,7 @@ const ComingSoon = () => {
             {row.map((colSpan, colIndex) => (
               <div
                 key={`${rowIndex}-${colIndex}`}
-                className={`col-span-${colSpan} bg-gray-800 rounded animate-pulse`}
+                className={`col-span-${colSpan} bg-gray-800 rounded animate-pulse hover:scale-105 transition-transform`}
               ></div>
             ))}
           </React.Fragment>
@@ -28,7 +28,7 @@ const ComingSoon = () => {
       </div>
 
       {/* Content */}
-      <div className="relative">
+      <div className="relative flex flex-col items-center justify-center space-y-4">
         <h2 className="text-white text-4xl md:text-8xl font-bold flex flex-row items-center">
           Coming
           <div className="relative text-sm mx-2">
@@ -50,6 +50,12 @@ const ComingSoon = () => {
           </div>
           Soon
         </h2>
+        <h3 className="text-gray-300 text-xl md:text-xl">
+          Check out our different study materials{" "}
+          <a href="/StartLearning" className="text-primary underline">
+            now
+          </a>
+        </h3>
       </div>
     </div>
   );

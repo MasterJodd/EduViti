@@ -23,7 +23,6 @@ type AnimatedTestimonialsProps = {
 // AnimatedTestimonials component
 export const AnimatedTestimonials = ({
   testimonials,
-  autoplay = false,
 }: AnimatedTestimonialsProps) => {
   const [active, setActive] = useState(0);
   const [rotateY, setRotateY] = useState<number>(0); // Default to a stable number
