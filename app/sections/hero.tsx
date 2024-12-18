@@ -60,7 +60,7 @@ const HeroSection = () => {
           />
         </div>
 
-        <div className="sm:hidden block back-in-left ">
+        <div className="sm:hidden block back-in-left z-50">
           <SearchBar />
         </div>
         {/* LETS GROW TOGETHER section */}
@@ -80,7 +80,7 @@ const HeroSection = () => {
       {/* Right side: Image */}
       <Tilt
         options={defaultOptions}
-        className="md:w-1/2 z-10 md:mt-0 mt-4 flex justify-center md:justify-end"
+        className="md:w-1/2 z-[5] md:mt-0 mt-4 flex justify-center md:justify-end"
       >
         <Image
           src={heroImage}
