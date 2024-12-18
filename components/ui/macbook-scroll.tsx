@@ -95,13 +95,12 @@ export const MacbookScroll = ({
           </div>
           <div className="flex relative">
             <div className="mx-auto w-[10%] overflow-hidden  h-full">
-              <SpeakerGrid />
             </div>
             <div className="mx-auto w-[80%] h-full">
               <Keypad />
             </div>
             <div className="mx-auto w-[10%] overflow-hidden  h-full">
-              <SpeakerGrid />
+
             </div>
           </div>
           <Trackpad />
@@ -116,20 +115,25 @@ export const MacbookScroll = ({
   );
 };
 
+
 export const Lid = ({
   scaleX,
   scaleY,
   rotate,
   translate,
-}: {
-  scaleX: MotionValue<number>;
+  src = mac, // Default to mac image
+}: {  scaleX: MotionValue<number>;
   scaleY: MotionValue<number>;
   rotate: MotionValue<number>;
   translate: MotionValue<number>;
-  src?: StaticImageData;
-}) => {
+  src?: StaticImageData;}) => {
+  const [fullScreen, setFullScreen] = useState(false);
+
+  const toggleFullScreen = () => setFullScreen((prev) => !prev);
+
   return (
     <div className="relative [perspective:800px]">
+      {/* Static Lid Section */}
       <div
         style={{
           transform: "perspective(800px) rotateX(-25deg) translateZ(0px)",
@@ -149,27 +153,48 @@ export const Lid = ({
           </span>
         </div>
       </div>
+
+      {/* Motion Lid Section */}
       <motion.div
-        style={{
-          scaleX: scaleX,
-          scaleY: scaleY,
-          rotateX: rotate,
-          translateY: translate,
-          transformStyle: "preserve-3d",
-          transformOrigin: "top",
-        }}
+        style={
+          !fullScreen
+            ? {
+                scaleX: scaleX,
+                scaleY: scaleY,
+                rotateX: rotate,
+                translateY: translate,
+                transformStyle: "preserve-3d",
+                transformOrigin: "top",
+              }
+            : {
+                scaleX: scaleX,
+                scaleY: scaleY,
+                rotateX: rotate,
+                translateY: translate,
+                transformStyle: "preserve-3d",
+                transformOrigin: "top",
+              }
+        }
         className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2"
       >
         <div className="absolute inset-0 bg-[#272729] rounded-lg" />
+
+        {/* Image Section */}
         <Image
-          src={mac} // Image source
+          src={src}
           alt="EduViti"
-          width={640} // Set a max width for the image
-          height={360} // Set a max height for the image
+          width={640}
+          height={360}
           priority
-          className="object-cover border border-primary/20 object-left-top absolute rounded-lg inset-0 h-full w-full"
+          onClick={toggleFullScreen}
+          className={`border border-primary/20 object-left-top absolute rounded-lg inset-0 ${
+            !fullScreen
+              ? "h-full w-full object-cover"
+              : "h-[24rem] w-[32rem] scale-150 absolute"
+          }`}
         />
 
+        {/* Blur Effect */}
         <div className="absolute inset-x-0 h-full w-full scale-150 -z-50 rounded-full bg-[#60a5fa09] to-transparent blur-3xl" />
       </motion.div>
     </div>
@@ -563,7 +588,7 @@ export const KBtn = ({
     <div
       className={cn(
         "p-[0.5px] rounded-[4px]",
-        backlit && "bg-white/[0.2] shadow-xl shadow-white",
+        backlit && "bg-white/[0.2] shadow-xl shadow-white/50",
       )}
     >
       <div
@@ -595,19 +620,6 @@ export const Row = ({ children }: { children: React.ReactNode }) => {
     <div className="flex gap-[2px] mb-[2px] w-full flex-shrink-0">
       {children}
     </div>
-  );
-};
-
-export const SpeakerGrid = () => {
-  return (
-    <div
-      className="flex px-[0.5px] gap-[2px] mt-2 h-40 opacity-25"
-      style={{
-        backgroundImage:
-          "radial-gradient(circle, #08080A 0.5px, transparent 0.5px)",
-        backgroundSize: "3px 3px",
-      }}
-    ></div>
   );
 };
 
@@ -647,17 +659,8 @@ export const OptionKey = ({ className }: { className: string }) => {
 
 const AceternityLogo = () => {
   return (
-    <motion.div
+    <div
       className="top-0 left-0 w-full h-full flex justify-center items-center"
-      initial={{ x: 0, y: 0 }}
-      animate={{
-        y: [5, -5, 5, -5, 5],
-      }}
-      transition={{
-        duration: 5,
-        repeat: Infinity,
-        ease: "linear",
-      }}
     >
       <Image
         src={nav_logo}
@@ -667,6 +670,6 @@ const AceternityLogo = () => {
         style={{ transform: "rotateX(-25deg)" }}
         className="object-contain shadow-lg rounded-lg h-24 w-24 opacity-25"
       />
-    </motion.div>
+    </div>
   );
 };

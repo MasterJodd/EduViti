@@ -12,24 +12,34 @@ const SearchPage = () => {
   };
 
   // Filter and sort results
-  const search_results = search_list
-    .filter((item) => item.title.toLowerCase().includes(search.toLowerCase()))
-    .sort((a, b) => a.preference - b.preference);
+// Filter and sort results
+const search_results = search_list
+  .filter((item) => {
+    const searchWords = search.toLowerCase().split(/\s+/); // Split search into words
+    const titleWords = item.title.toLowerCase(); // Convert title to lowercase
+    // Check if every word in searchWords exists in titleWords
+    return searchWords.every((word) => titleWords.includes(word));
+  })
+  .sort((a, b) => a.preference - b.preference);
+
 
   // Highlight matching text
   const highlightMatch = (text: string) => {
-    if (!search) return text; // Return plain text if no search term is provided
-    const parts = text.split(new RegExp(`(${search})`, "gi"));
-    return parts.map((part, index) =>
-      part.toLowerCase() === search.toLowerCase() ? (
-        <span key={index} className="text-primary font-bold">
-          {part}
-        </span>
-      ) : (
-        part
-      ),
-    );
-  };
+  if (!search) return text;
+  const searchWords = search.split(/\s+/);
+  const regex = new RegExp(`(${searchWords.join("|")})`, "gi");
+  const parts = text.split(regex);
+  return parts.map((part, index) =>
+    searchWords.some((word) => word.toLowerCase() === part.toLowerCase()) ? (
+      <span key={index} className="text-primary font-bold">
+        {part}
+      </span>
+    ) : (
+      part
+    ),
+  );
+};
+
 
   return (
     <BackgroundLines className="bg-white/5 flex flex-col items-center w-screen pt-32 justify-start text-white px-6 space-y-12">

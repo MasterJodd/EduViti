@@ -193,7 +193,7 @@ interface SearchItem {
 }
 
 // Classes, Subjects, and Categories for dynamic path generation
-const classes = ["Grade-9", "Grade-10", "Grade-11", "Grade-12"];
+const classes = ["Class 9", "Class 10", "Class 11", "Class 12"];
 const subjects = ["physics", "chemistry", "maths", "biology"];
 const categories = [
   "notes",
