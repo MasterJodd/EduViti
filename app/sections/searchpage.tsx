@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { BackgroundLines } from "@/components/ui/background-lines";
-import { search_list } from "@/data/search.querry";
+import { search_list } from "@/data/search.query";
 
 const SearchPage = () => {
   const [search, setSearch] = useState("");
@@ -12,42 +12,40 @@ const SearchPage = () => {
   };
 
   // Filter and sort results
-// Filter and sort results
-const search_results = search_list
-  .filter((item) => {
-    const searchWords = search.toLowerCase().split(/\s+/); // Split search into words
-    const titleWords = item.title.toLowerCase(); // Convert title to lowercase
-    // Check if every word in searchWords exists in titleWords
-    return searchWords.every((word) => titleWords.includes(word));
-  })
-  .sort((a, b) => a.preference - b.preference);
-
+  // Filter and sort results
+  const search_results = search_list
+    .filter((item) => {
+      const searchWords = search.toLowerCase().split(/\s+/); // Split search into words
+      const titleWords = item.title.toLowerCase(); // Convert title to lowercase
+      // Check if every word in searchWords exists in titleWords
+      return searchWords.every((word) => titleWords.includes(word));
+    })
+    .sort((a, b) => a.preference - b.preference);
 
   // Highlight matching text
   const highlightMatch = (text: string) => {
-  if (!search) return text;
-  const searchWords = search.split(/\s+/);
-  const regex = new RegExp(`(${searchWords.join("|")})`, "gi");
-  const parts = text.split(regex);
-  return parts.map((part, index) =>
-    searchWords.some((word) => word.toLowerCase() === part.toLowerCase()) ? (
-      <span key={index} className="text-primary font-bold">
-        {part}
-      </span>
-    ) : (
-      part
-    ),
-  );
-};
-
+    if (!search) return text;
+    const searchWords = search.split(/\s+/);
+    const regex = new RegExp(`(${searchWords.join("|")})`, "gi");
+    const parts = text.split(regex);
+    return parts.map((part, index) =>
+      searchWords.some((word) => word.toLowerCase() === part.toLowerCase()) ? (
+        <span key={index} className="text-primary font-bold">
+          {part}
+        </span>
+      ) : (
+        part
+      ),
+    );
+  };
 
   return (
     <BackgroundLines className="bg-white/5 flex flex-col items-center w-screen pt-32 justify-start text-white px-6 space-y-12">
-      <h2 className="text-4xl md:text-5xl font-bold text-center max-w-[500px] mt-5">
+      <h2 className="text-4xl md:text-5xl font-bold text-center max-w-[500px] mt-5 z-50">
         Discover New Learning{" "}
         <span className="text-primary">Opportunities</span>
       </h2>
-      <p className="text-lg md:text-xl text-center text-white/80 max-w-xl leading-relaxed">
+      <p className="text-lg md:text-xl text-center z-50 text-white/80 max-w-xl leading-relaxed">
         Search through our vast library of study materials and find the
         resources that fit your goals.
       </p>
@@ -94,9 +92,9 @@ const search_results = search_list
       )}
       <a
         href="#discover"
-        className="text-md text-center text-gray-300 font-medium hover:text-white transition duration-100"
+        className="text-md text-center z-50 text-gray-300 font-medium hover:underline transition duration-100 cursor-pointer"
       >
-        Discover new possibilities!
+        Discover new <span className="text-primary">possibilities!</span>
       </a>
     </BackgroundLines>
   );

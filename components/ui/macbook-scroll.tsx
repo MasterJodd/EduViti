@@ -25,6 +25,7 @@ import { IconCaretLeftFilled } from "@tabler/icons-react";
 import { IconCaretDownFilled } from "@tabler/icons-react";
 import Image, { StaticImageData } from "next/image";
 import { mac, nav_logo } from "@/images/main";
+import Link from "next/link";
 
 export const MacbookScroll = ({
   showGradient,
@@ -94,14 +95,11 @@ export const MacbookScroll = ({
             <div className="absolute inset-x-0 mx-auto w-[80%] h-4 bg-[#050505]" />
           </div>
           <div className="flex relative">
-            <div className="mx-auto w-[10%] overflow-hidden  h-full">
-            </div>
+            <div className="mx-auto w-[10%] overflow-hidden  h-full"></div>
             <div className="mx-auto w-[80%] h-full">
               <Keypad />
             </div>
-            <div className="mx-auto w-[10%] overflow-hidden  h-full">
-
-            </div>
+            <div className="mx-auto w-[10%] overflow-hidden  h-full"></div>
           </div>
           <Trackpad />
           <div className="h-2 w-20 mx-auto inset-x-0 absolute bottom-0 bg-gradient-to-t from-[#272729] to-[#050505] rounded-tr-3xl rounded-tl-3xl" />
@@ -115,22 +113,19 @@ export const MacbookScroll = ({
   );
 };
 
-
 export const Lid = ({
   scaleX,
   scaleY,
   rotate,
   translate,
   src = mac, // Default to mac image
-}: {  scaleX: MotionValue<number>;
+}: {
+  scaleX: MotionValue<number>;
   scaleY: MotionValue<number>;
   rotate: MotionValue<number>;
   translate: MotionValue<number>;
-  src?: StaticImageData;}) => {
-  const [fullScreen, setFullScreen] = useState(false);
-
-  const toggleFullScreen = () => setFullScreen((prev) => !prev);
-
+  src?: StaticImageData;
+}) => {
   return (
     <div className="relative [perspective:800px]">
       {/* Static Lid Section */}
@@ -156,43 +151,33 @@ export const Lid = ({
 
       {/* Motion Lid Section */}
       <motion.div
-        style={
-          !fullScreen
-            ? {
-                scaleX: scaleX,
-                scaleY: scaleY,
-                rotateX: rotate,
-                translateY: translate,
-                transformStyle: "preserve-3d",
-                transformOrigin: "top",
-              }
-            : {
-                scaleX: scaleX,
-                scaleY: scaleY,
-                rotateX: rotate,
-                translateY: translate,
-                transformStyle: "preserve-3d",
-                transformOrigin: "top",
-              }
-        }
+        style={{
+          scaleX: scaleX,
+          scaleY: scaleY,
+          rotateX: rotate,
+          translateY: translate,
+          transformStyle: "preserve-3d",
+          transformOrigin: "top",
+        }}
         className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2"
       >
         <div className="absolute inset-0 bg-[#272729] rounded-lg" />
 
         {/* Image Section */}
-        <Image
-          src={src}
-          alt="EduViti"
-          width={640}
-          height={360}
-          priority
-          onClick={toggleFullScreen}
-          className={`border border-primary/20 object-left-top absolute rounded-lg inset-0 ${
-            !fullScreen
-              ? "h-full w-full object-cover"
-              : "h-[24rem] w-[32rem] scale-150 absolute"
-          }`}
-        />
+        <Link
+          href="/mac.png"
+          target="_blank"
+          className="h-full w-full object-cover"
+        >
+          <Image
+            src={src}
+            alt="EduViti"
+            width={640}
+            height={360}
+            priority
+            className="border border-primary/20 object-left-top absolute rounded-lg inset-0 h-full w-full object-cover"
+          />
+        </Link>
 
         {/* Blur Effect */}
         <div className="absolute inset-x-0 h-full w-full scale-150 -z-50 rounded-full bg-[#60a5fa09] to-transparent blur-3xl" />
@@ -659,9 +644,7 @@ export const OptionKey = ({ className }: { className: string }) => {
 
 const AceternityLogo = () => {
   return (
-    <div
-      className="top-0 left-0 w-full h-full flex justify-center items-center"
-    >
+    <div className="top-0 left-0 w-full h-full flex justify-center items-center">
       <Image
         src={nav_logo}
         alt="EduViti Logo"

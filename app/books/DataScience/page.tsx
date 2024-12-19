@@ -2,13 +2,13 @@ import BackButton from "@/app/components/backbtn";
 import React from "react";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
-import { physics } from "@/images/main"; // Replace with the actual image import for Data Science
+import { coming_soon_portrait } from "@/data/comingsoon";
 
 type Book = {
   title: string;
   author: string;
   description: string;
-  image: StaticImageData;
+  image: StaticImageData | string;
 };
 
 const books: Book[] = [
@@ -17,21 +17,21 @@ const books: Book[] = [
     author: "Foster Provost and Tom Fawcett",
     description:
       "An essential introduction to data science, focusing on business applications and decision-making.",
-    image: physics,
+    image: coming_soon_portrait,
   },
   {
     title: "Python for Data Analysis",
     author: "Wes McKinney",
     description:
       "A practical guide to data analysis with Python, focusing on data wrangling, manipulation, and visualization.",
-    image: physics,
+    image: coming_soon_portrait,
   },
   {
     title: "Deep Learning",
     author: "Ian Goodfellow, Yoshua Bengio, and Aaron Courville",
     description:
       "A comprehensive book on deep learning concepts, techniques, and applications.",
-    image: physics,
+    image: coming_soon_portrait,
   },
   // Add more books here as needed
 ];
