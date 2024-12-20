@@ -9,24 +9,24 @@ export const FAQs: FAQType[] = [
     id: 1,
     question: "How can I contribute to EduViti?",
     answer:
-      "We welcome contributions in the form of study materials, video lectures, or offering guidance to students. You can be part of our vision for a better academic future!",
+      "We welcome contributions in the form of study materials, video lectures, or offering guidance to students. You can also share your knowledge and help enhance the learning experience on our platform.",
   },
   {
     id: 2,
     question: "What are the perks of being part of the team?",
     answer:
-      "Yes, all the study materials on our platform are available for free. You can access them at any time and use them to enhance your learning experience.",
+      "Being part of the EduViti team gives you access to premium study materials, exclusive content, and a platform to grow your knowledge and skills while helping others. Join us in building a better learning community!",
   },
   {
     id: 3,
     question: "Is teaching experience required to join?",
     answer:
-      "Yes, you can download the study materials, including notes, question banks, and other resources, for offline use. This way, you can study even when you're not connected to the internet.",
+      "No, teaching experience is not required. EduViti values contributions from learners and experts alike. Whether you're a student or a professional, your input can make a difference.",
   },
   {
     id: 4,
     question: "Is there any benefit for contributors?",
     answer:
-      "Yes, we offer a study planner tool that helps you organize your study schedule, set goals, and track your progress. You can use this tool to stay on track with your studies and manage your time effectively.",
+      "Yes, contributors can earn recognition, gain experience in the education field, and improve their professional profile. Plus, you can collaborate with a community of passionate learners and educators!",
   },
 ];

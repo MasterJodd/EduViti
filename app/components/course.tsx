@@ -22,6 +22,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
         <Image
           src={thumbnail}
           alt={`${name} thumbnail`}
+          loading="lazy"
           fill
           className="rounded-lg object-cover border border-primary/40"
         />
@@ -33,7 +34,8 @@ const CourseCard: React.FC<CourseCardProps> = ({
 
       <a
         href={path}
-        className="bg-primary text-bg px-4 py-2 flex items-center justify-center rounded-lg hover:bg-primary/80 transition"
+        className="bg-primary text-bg px-4 py-2 flex items-center justify-center rounded-lg hover:bg-primary/80 transition-all"
+        aria-label={`Watch ${name} course`}
       >
         Watch Now
       </a>

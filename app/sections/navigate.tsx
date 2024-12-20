@@ -26,7 +26,7 @@ const ShowListComponent = () => {
   return (
     <section id="discover">
       <LampContainer>
-        <h1 className="text-5xl font-bold text-white mb-6 text-center">
+        <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 text-center">
           Welcome to <span className="text-primary">EduViti!</span>
         </h1>
         <p className="text-lg text-gray-200 text-center">
@@ -38,7 +38,7 @@ const ShowListComponent = () => {
         {showList.map((item) => (
           <div
             key={item.label}
-            className="relative overflow-hidden h-full rounded-2xl transition duration-200 group bg-white/10 hover:shadow-xl border border-primary/40"
+            className="relative overflow-hidden h-full rounded-2xl transition duration-200 group bg-white/10 hover:shadow-xl border border-primary/40 max-w-[400px] mx-auto"
           >
             {/* Image Container with Hover Effects */}
             <div className="w-full aspect-w-16 aspect-h-10 rounded-t-2xl overflow-hidden relative h-40">
@@ -46,6 +46,9 @@ const ShowListComponent = () => {
                 src={item.image}
                 alt={item.label}
                 className="group-hover:scale-95 group-hover:rounded-xl transform object-cover transition duration-200"
+                width={640} 
+                height={427} 
+                layout="intrinsic"
               />
             </div>
 
@@ -59,7 +62,11 @@ const ShowListComponent = () => {
             {/* "FREE" Tag and Button - Stick to Bottom */}
             <div className="absolute bottom-4 left-4 right-4 flex flex-row justify-between items-center">
               <h3 className="text-primary text-xs font-black">FREE</h3>
-              <Btn displayText="Visit Now" url={item.path} />
+              <Btn
+                displayText="Visit Now"
+                url={item.path}
+                aria-label={`Visit ${item.label}`}
+              />
             </div>
           </div>
         ))}

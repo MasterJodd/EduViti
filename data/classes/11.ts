@@ -37,7 +37,7 @@ export const maths = {
       name: "Relations and Functions",
       path: "xyz",
     },
-    { 
+    {
       name: "Trigonometric Functions",
       path: "xyz",
     },

@@ -1,5 +1,5 @@
 import React from "react";
-import * as motion from "motion/react-client";
+import * as motion from "motion/react-m";
 import { cn } from "@/lib/utils";
 
 export const BackgroundBeams = React.memo(

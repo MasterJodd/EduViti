@@ -17,7 +17,7 @@ const ChapterCard: React.FC<ChapterCardProps> = ({ title, fileId }) => {
         target="_blank"
         className="text-lg flex flex-row items-center justify-center gap-2  text-white/90"
       >
-        ⁍ <span className="hover:underline underline-offset-3">{title}</span>↗
+        ⁍ <span className="hover:underline underline-offset-3">{title}</span>
       </a>
       <a
         href={
@@ -25,7 +25,7 @@ const ChapterCard: React.FC<ChapterCardProps> = ({ title, fileId }) => {
             ? `https://drive.google.com/uc?export=download&id=${fileId}`
             : `https://eduviti.me/not-found`
         }
-        className="items-center gap-2 justify-center flex flex-row px-4 py-2 text-bg bg-primary rounded-lg hover:bg-primary/80 transition no-underline"
+        className="items-center gap-2 justify-center flex flex-row px-4 ml-12 py-2 text-bg bg-primary rounded-lg hover:bg-primary/80 transition no-underline"
         download
       >
         Download

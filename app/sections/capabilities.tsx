@@ -11,13 +11,14 @@ const Capabilities: React.FC = () => {
         We Can Help You With...
       </h2>
       <div className="max-w-7xl min-w-5xl mx-auto flex flex-wrap justify-center gap-6 pt-3">
-        {capabilities.map((capability) => (
+        {capabilities.map(({ id, title }) => (
           <div
-            key={capability.id}
-            className="bg-primary text-[#222] p-4 rounded-lg shadow-md hover:bg-primary/70  duration-100 flex items-center justify-center"
+            key={id}
+            className="bg-primary text-[#222] p-4 rounded-lg shadow-md hover:bg-primary/70 duration-100 flex items-center justify-center"
+            aria-label={title} // Adding accessibility for screen readers
           >
             <p className="text-md font-medium whitespace-nowrap overflow-hidden text-ellipsis text-center">
-              {capability.title}
+              {title}
             </p>
           </div>
         ))}
@@ -26,4 +27,4 @@ const Capabilities: React.FC = () => {
   );
 };
 
-export default Capabilities;
+export default React.memo(Capabilities); // Use React.memo to prevent unnecessary re-renders

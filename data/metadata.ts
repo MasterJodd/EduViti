@@ -23,11 +23,4 @@ export const metadata_base = {
   },
   applicationName: "EduViti",
   category: "website",
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-US": "/",
-      "hi-IN": "/",
-    },
-  },
 };

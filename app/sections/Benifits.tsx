@@ -29,25 +29,27 @@ const BenefitsSection = () => {
 
       {/* Features grid - Limit to 4-5 benefits */}
       <div className="sm:hidden grid sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
-        {benefitsData.map((benefit: BenefitType, index: number) => (
-          <div
-            key={index}
-            className="flex p-8 border-y border-[#666]/50 flex-col sm:text-start text-center"
-          >
-            <Image
-              src={benefit.icon}
-              className="text-4xl sm:mx-0 mx-auto mb-3 size-10"
-              alt={benefit.title}
-              width={50}
-              height={50}
-            />
-            <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
-            <p className="text-gray-400">{benefit.description}</p>
-          </div>
-        ))}
+        {benefitsData
+          .slice(0, 5)
+          .map(({ icon, title, description }: BenefitType) => (
+            <div
+              key={title}
+              className="flex p-8 border-y border-[#666]/50 flex-col sm:text-start text-center"
+            >
+              <Image
+                src={icon}
+                className="text-4xl sm:mx-0 mx-auto mb-3 size-10"
+                alt={title}
+                width={50}
+                height={50}
+              />
+              <h3 className="text-xl font-bold mb-2">{title}</h3>
+              <p className="text-gray-400">{description}</p>
+            </div>
+          ))}
       </div>
     </section>
   );
 };
 
-export default BenefitsSection;
+export default React.memo(BenefitsSection); // Prevent unnecessary re-renders

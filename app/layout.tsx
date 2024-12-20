@@ -32,13 +32,11 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://vercel.live" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body
-        className={`${fredoka.className} layout`}
-      >
+      <body className={`${fredoka.className} layout`}>
         <Cursor />
 
         {children}
-        <Analytics />
+        <Analytics mode="production"/>
         <SpeedInsights />
       </body>
     </html>

@@ -1,52 +1,86 @@
 # 🏆 Eduviti
 
-### **Scripting the Your Future**
+### **Scripting Your Future**
 
-Eduviti is an innovative platform for learners, by learners! Whether you're gearing up for JEE or diving into foundational concepts, Eduviti is your one-stop destination for curated video lectures, question banks, and study materials.
+- Eduviti is an online learning platform built with Next.js, designed to provide curated courses and resources for students from preparing competitive exams to picking up foundational courses. With interactive video lectures, question banks, and personalized study tools, Eduviti delivers an engaging, fast, and scalable learning experience.
+
+---
+
+![](https://eduviti.me/twitter-image.png)
 
 ---
 
 ## 🚀 Features
 
 - 📚 **Curated Video Lectures**: Handpicked videos from top educators for both advanced and foundational learning.
-- 🧩 **Interactive Question Banks**: Test your knowledge with practice questions and detailed solutions.
-- 🔍 **Easy Navigation**: Quickly find what you need with our user-friendly layout.
-- 🎯 **Tailored for JEE**: One-shots, revision series, and deep dives into critical topics.
+- 🔍 **Free Books**: We provide free books for your preparation.
+- 🧩 **Interactive Question Banks & Sample Paperes**: Test your knowledge with practice questions and detailed solutions with Precisely made sample papers.
+- 🔍 **Quick Notes**: Quickly summarizes all your topics.
+- 🧩 **Easy Navigation**: Quickly find what you need with our user-friendly layout.
+- 🎯 **Tailored for Competitive Exams**: One-shots, revision series, and deep dives into critical topics.
 - 🌐 **Compact Design**: A simple, clean, and intuitive UI to keep you focused on learning.
-
----
-
-## 🎯 Our Mission
-
-At Eduviti, we're passionate about making quality education accessible to everyone. By combining the best content with an easy-to-use platform, we help learners unlock their full potential.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Next.js, TypeScript, TailwndCSS
-- **Backend**: Node.js
+- **Frontend**: Next.js, TypeScript, TailwindCSS
+- **UI & Components**: Radix UI, Shadcn, Aceternity
+- **Animations**: Motion, Tailwind Animate
+- **Code Management**: ESLint, Prettier
 - **Hosting**: Vercel
 - **Version Control**: Git & GitHub
 
 ---
-
-![](https://eduviti.me/big.png)
-
----
-
 ## 🤝 Contributing
 
-We welcome contributions from the community!
+We welcome contributions! Please follow these steps:
 
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a pull request.
+1. Fork the repository
+2. Create a feature branch (`git checkout -b AmazingFeature`)
+3. Commit your changes (`git commit -m 'Added some AmazingFeature'`)
+4. Push to the branch (`git push origin AmazingFeature`)
+5. Open a Pull Request
+
+### Contribution Guidelines
+
+- Follow existing code style
+- Write clear, concise commit messages
+- Update documentation as needed
 
 ---
+## 🔧 Installation
 
+### Prerequisites
+
+- Node.js (v22+)
+- pnpm
+- git
+
+
+### Setup Instructions
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/LetsCodez/EduViti.git
+   cd EduViti
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   pnpm install
+   ```
+
+3. **Run the Application**
+   ```bash
+   # Start the Next.js server
+   npm start
+   ```
+4. **Hurrah!** The application should now be running on [http://localhost:3000](http://localhost:3000)
+Start contributing to the project by adding new features, fixing bugs, and improving the codebase.
+
+
+---
 ## 🌟 Show Your Support
 
 Give this project a ⭐️ if you love the idea and want to support the community-driven learning revolution!

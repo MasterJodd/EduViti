@@ -50,9 +50,8 @@ const LecturesCard: React.FC<LecturesCardProps> = ({ list }) => {
                     <Image
                       src={option.thumbnail}
                       alt={`${chapter.name} thumbnail`}
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-md hover:scale-[1.02] transition-transform duration-200"
+                      fill
+                      className="absolute inset-0 rounded-md hover:scale-[1.02] transition-transform duration-200"
                     />
                   </div>
                   <div className="flex items-center justify-between w-full mt-2">

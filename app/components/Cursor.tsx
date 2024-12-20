@@ -13,10 +13,10 @@ const cursorConfig = {
   innerSize: 8,
   outerSize: 35,
   innerScale: 1,
-  outerScale: 2,
+  outerScale: 1.75,
   outerAlpha: 0,
   innerStyle: {
-    backgroundColor: "#06d6a0",
+    backgroundColor: "#0beab0",
     zIndex: 999999, // Fixed camelCase for CSS property
   },
   outerStyle: {
@@ -34,8 +34,13 @@ const cursorConfig = {
     "img",
     "p", // Added flexibility for clickable elements
   ],
+  trailingSpeed: 4,
 };
 
-const Cursor = () => <AnimatedCursor {...cursorConfig} />;
+const Cursor = () => (
+  <div className="md:block hidden">
+    <AnimatedCursor {...cursorConfig} />
+  </div>
+);
 
 export default Cursor;

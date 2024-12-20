@@ -52,7 +52,7 @@ const Navbar: React.FC<NavbarProps> = ({ homeBtn }) => {
           alt="Logo"
           height={60}
           width={60}
-          className="ml-4 focus:outline-none"
+          className="ml-4 focus:outline-none hover:scale-110 duration-200"
           priority
         />
       </Link>
@@ -74,7 +74,7 @@ const Navbar: React.FC<NavbarProps> = ({ homeBtn }) => {
           <Btn className="sm:block hidden" displayText="Home" url="/" />
         )}
         {!homeBtn && (
-          <div className="hidden sm:block">
+          <div className="hidden lg:block">
             <SearchBar />
           </div>
         )}

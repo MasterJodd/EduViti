@@ -14,8 +14,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"; // Ensure these components are exported correctly
 import { navLinks } from "@/data/navlinks"; // Your navigation links data
-import Image from "next/image";
-import { nav_logo } from "@/images/main"; // Make sure nav_logo is imported correctly
 
 const Hamburger = () => {
   return (
@@ -41,30 +39,29 @@ const Hamburger = () => {
 
       <DialogContent>
         <DialogHeader>
-          <DialogTitle className="flex h-[70px] sm:h-[90px] text-center items-center ">
-            <Image
-              src={nav_logo}
-              alt="logo"
-              height={70}
-              className="ml-2 sm:w-[90px] "
-            />
-            <p className="text-gray-200 text-xl ml-2">
-              Choose a link to navigate.
-            </p>
+          <DialogTitle className="text-start ml-4 my-2 text-gray-100">
+            ⁍ Choose a link to navigate.
           </DialogTitle>
         </DialogHeader>
 
-        <Accordion type="multiple" className="flex flex-col h-full space-y-4">
+        <Accordion type="multiple" className="flex flex-col h-full space-y-4 ">
           {navLinks.map((link) => (
             <AccordionItem key={link.label} value={link.label}>
-              <AccordionTrigger>{link.label}</AccordionTrigger>
-              <AccordionContent>
+              <AccordionTrigger className="focus-within:outline-none">
+                {link.label}
+              </AccordionTrigger>
+              <AccordionContent className="focus-within:outline-none">
                 {link.sublinks.map((sublink) => (
                   <div
-                    className="my-4 text-grey-400 hover:text-primary"
+                    className="my-4 text-grey-400 hover:text-primary focus-within:outline-none"
                     key={sublink.label}
                   >
-                    <a href={sublink.path}>⁍ {sublink.label}</a>
+                    <a
+                      href={sublink.path}
+                      className="focus-within:outline-none"
+                    >
+                      ⁍ {sublink.label}
+                    </a>
                   </div>
                 ))}
               </AccordionContent>
