@@ -11,6 +11,7 @@ import {
   manjit_maths_9,
 } from "@/images/main";
 import { LinkType } from "./linkType";
+import { coming_soon_url } from "../comingsoon";
 
 export const links: LinkType[] = [
   { name: "Maths", path: "/StudyResources/Grade-12/maths", icon: rocket },
@@ -56,9 +57,9 @@ export const maths = {
       name: "Applications of Derivatives",
       path: "xyz",
     },
-    { 
-      name: "Integrals", 
-      path: "xyz" 
+    {
+      name: "Integrals",
+      path: "xyz",
     },
     {
       name: "Application of Integrals",
@@ -84,7 +85,6 @@ export const maths = {
       name: "Probability",
       path: "xyz",
     },
-    
   ],
   pyqp: [
     {
@@ -107,7 +107,6 @@ export const maths = {
       name: "Session 2020-2021",
       path: "xyz",
     },
-    
   ],
   question_banks: [
     {
@@ -213,7 +212,7 @@ export const maths = {
         { name: "Set 2", path: "xyz" },
         { name: "Set 3", path: "xyz" },
       ],
-    },    
+    },
   ],
 
   sample_paper: [
@@ -320,7 +319,7 @@ export const maths = {
         { name: "Set 2", path: "xyz" },
         { name: "Set 3", path: "xyz" },
       ],
-    },    
+    },
   ],
   video_lectures: [
     {
@@ -459,22 +458,22 @@ export const maths = {
     {
       title: "RD Sharma",
       thumbnail: rd_maths_9,
-      link: "xyz",
+      link: "https://eduviti.me/not-found",
     },
     {
       title: "RS Aggarwal",
       thumbnail: rs_maths_9,
-      link: "xyz",
+      link: "https://eduviti.me/not-found",
     },
     {
       title: "Pearson",
       thumbnail: pearson,
-      link: "xyz",
+      link: "https://eduviti.me/not-found",
     },
     {
       title: "Manjit Singh",
       thumbnail: manjit_maths_9,
-      link: "xyz",
+      link: "https://eduviti.me/not-found",
     },
     // Add more books here as needed
   ],
@@ -960,7 +959,7 @@ export const physics = {
           path: "xyz",
         },
       ],
-    }
+    },
   ],
   video_lectures: [
     {
@@ -1108,17 +1107,17 @@ export const physics = {
     {
       title: "HC Verma",
       thumbnail: hc_phy_9,
-      link: "xyz",
+      link: "https://eduviti.me/not-found",
     },
     {
       title: "RS Aggarwal",
       thumbnail: rs_maths_9,
-      link: "xyz",
+      link: "https://eduviti.me/not-found",
     },
     {
       title: "Pearson",
       thumbnail: pearson,
-      link: "xyz",
+      link: "https://eduviti.me/not-found",
     },
     // Add more books here as needed
   ],
@@ -1418,14 +1417,9 @@ export const chemistry = {
       name: "Solid State",
       options: [
         {
-          path: "/dummy/path/solid-state/opt1",
-          thumbnail: "/images/solid_state_thumbnail1.jpg",
-          channel: "Chemistry Channel 1",
-        },
-        {
-          path: "/dummy/path/solid-state/opt2",
-          thumbnail: "/images/solid_state_thumbnail2.jpg",
-          channel: "Chemistry Channel 2",
+          path: "https://youtu.be/x2A4X8UqTUw?si=qbaDv73Svzpduz9i",
+          thumbnail: "https://img.youtube.com/vi/x2A4X8UqTUw/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1433,14 +1427,9 @@ export const chemistry = {
       name: "Solutions",
       options: [
         {
-          path: "/dummy/path/solutions/opt1",
-          thumbnail: "/images/solutions_thumbnail1.jpg",
-          channel: "Chemistry Channel 3",
-        },
-        {
-          path: "/dummy/path/solutions/opt2",
-          thumbnail: "/images/solutions_thumbnail2.jpg",
-          channel: "Chemistry Channel 4",
+          path: "https://www.youtube.com/live/UQxrgxBWD4o?si=9HUeDlq8WBFG1LP2",
+          thumbnail: "https://img.youtube.com/vi/UQxrgxBWD4o/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1448,14 +1437,9 @@ export const chemistry = {
       name: "Electrochemistry",
       options: [
         {
-          path: "/dummy/path/electrochemistry/opt1",
-          thumbnail: "/images/electrochemistry_thumbnail1.jpg",
-          channel: "Chemistry Channel 5",
-        },
-        {
-          path: "/dummy/path/electrochemistry/opt2",
-          thumbnail: "/images/electrochemistry_thumbnail2.jpg",
-          channel: "Chemistry Channel 6",
+          path: "https://www.youtube.com/live/HHJaA0URvxY?si=nicKlj4GAgglyT90",
+          thumbnail: "https://img.youtube.com/vi/HHJaA0URvxY/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1463,14 +1447,9 @@ export const chemistry = {
       name: "Chemical Kinetics",
       options: [
         {
-          path: "/dummy/path/chemical-kinetics/opt1",
-          thumbnail: "/images/chemical_kinetics_thumbnail1.jpg",
-          channel: "Chemistry Channel 7",
-        },
-        {
-          path: "/dummy/path/chemical-kinetics/opt2",
-          thumbnail: "/images/chemical_kinetics_thumbnail2.jpg",
-          channel: "Chemistry Channel 8",
+          path: "https://youtu.be/CT2SRwC-914?si=GCK6HRd90_VzPG4r",
+          thumbnail: "https://img.youtube.com/vi/CT2SRwC-914/hqdefault.jpg",
+          channel: "Apni Kaksha",
         },
       ],
     },
@@ -1478,14 +1457,9 @@ export const chemistry = {
       name: "Surface Chemistry",
       options: [
         {
-          path: "/dummy/path/surface-chemistry/opt1",
-          thumbnail: "/images/surface_chemistry_thumbnail1.jpg",
-          channel: "Chemistry Channel 9",
-        },
-        {
-          path: "/dummy/path/surface-chemistry/opt2",
-          thumbnail: "/images/surface_chemistry_thumbnail2.jpg",
-          channel: "Chemistry Channel 10",
+          path: "https://youtu.be/AU5VbtxP284?si=p4lF3V4MOdpFN5f1",
+          thumbnail: "https://img.youtube.com/vi/AU5VbtxP284/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1493,14 +1467,9 @@ export const chemistry = {
       name: "p-Block Elements",
       options: [
         {
-          path: "/dummy/path/p-block-elements/opt1",
-          thumbnail: "/images/p_block_elements_thumbnail1.jpg",
-          channel: "Chemistry Channel 11",
-        },
-        {
-          path: "/dummy/path/p-block-elements/opt2",
-          thumbnail: "/images/p_block_elements_thumbnail2.jpg",
-          channel: "Chemistry Channel 12",
+          path: "https://youtu.be/ICTQ-9C5OU8?si=SrhhoClBi4AzSKnF",
+          thumbnail: "https://img.youtube.com/vi/ICTQ-9C5OU8/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1508,14 +1477,9 @@ export const chemistry = {
       name: "d-and f-Block Elements",
       options: [
         {
-          path: "/dummy/path/d-and-f-block-elements/opt1",
-          thumbnail: "/images/d_and_f_block_elements_thumbnail1.jpg",
-          channel: "Chemistry Channel 13",
-        },
-        {
-          path: "/dummy/path/d-and-f-block-elements/opt2",
-          thumbnail: "/images/d_and_f_block_elements_thumbnail2.jpg",
-          channel: "Chemistry Channel 14",
+          path: "https://youtu.be/f5a0vFh1ahs?si=KUIicqafvyDvT8P3",
+          thumbnail: "https://img.youtube.com/vi/f5a0vFh1ahs/hqdefault.jpg",
+          channel: "Science and Fun Education",
         },
       ],
     },
@@ -1523,14 +1487,9 @@ export const chemistry = {
       name: "Coordination Compounds",
       options: [
         {
-          path: "/dummy/path/coordination-compounds/opt1",
-          thumbnail: "/images/coordination_compounds_thumbnail1.jpg",
-          channel: "Chemistry Channel 15",
-        },
-        {
-          path: "/dummy/path/coordination-compounds/opt2",
-          thumbnail: "/images/coordination_compounds_thumbnail2.jpg",
-          channel: "Chemistry Channel 16",
+          path: "https://youtu.be/rndrCkiJ6wM?si=UGLDZpVYiguz0mI5",
+          thumbnail: "https://img.youtube.com/vi/rndrCkiJ6wM/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1538,14 +1497,9 @@ export const chemistry = {
       name: "Haloalkanes and Haloarenes",
       options: [
         {
-          path: "/dummy/path/haloalkanes-and-haloarenes/opt1",
-          thumbnail: "/images/haloalkanes_haloarenes_thumbnail1.jpg",
-          channel: "Chemistry Channel 17",
-        },
-        {
-          path: "/dummy/path/haloalkanes-and-haloarenes/opt2",
-          thumbnail: "/images/haloalkanes_haloarenes_thumbnail2.jpg",
-          channel: "Chemistry Channel 18",
+          path: "https://www.youtube.com/live/pJXqS_Bq20w?si=dQwAtMwlCMdWnu19",
+          thumbnail: "https://img.youtube.com/vi/pJXqS_Bq20w/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1553,14 +1507,9 @@ export const chemistry = {
       name: "Alcohols, Phenols and Ethers",
       options: [
         {
-          path: "/dummy/path/alcohols-phenols-ethers/opt1",
-          thumbnail: "/images/alcohols_phenols_ethers_thumbnail1.jpg",
-          channel: "Chemistry Channel 19",
-        },
-        {
-          path: "/dummy/path/alcohols-phenols-ethers/opt2",
-          thumbnail: "/images/alcohols_phenols_ethers_thumbnail2.jpg",
-          channel: "Chemistry Channel 20",
+          path: "https://www.youtube.com/live/SU0u5AG1L-s?si=FlwspINe6FlLhgHT",
+          thumbnail: "https://img.youtube.com/vi/SU0u5AG1L-s/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1568,16 +1517,9 @@ export const chemistry = {
       name: "Aldehydes, Ketones and Carboxylic Acids",
       options: [
         {
-          path: "/dummy/path/aldehydes-ketons-and-carboxylic-acids/opt1",
-          thumbnail:
-            "/images/aldehydes_ketones_carboxylic_acids_thumbnail1.jpg",
-          channel: "Chemistry Channel 21",
-        },
-        {
-          path: "/dummy/path/aldehydes-ketons-and-carboxylic-acids/opt2",
-          thumbnail:
-            "/images/aldehydes_ketones_carboxylic_acids_thumbnail2.jpg",
-          channel: "Chemistry Channel 22",
+          path: "https://youtu.be/VTAs9VCC5Vc?si=uijMiy9pHitxCM1s",
+          thumbnail: "https://img.youtube.com/vi/VTAs9VCC5Vc/hqdefault.jpg",
+          channel: "Science and Fun Education",
         },
       ],
     },
@@ -1585,14 +1527,9 @@ export const chemistry = {
       name: "Amines",
       options: [
         {
-          path: "/dummy/path/amines/opt1",
-          thumbnail: "/images/amines_thumbnail1.jpg",
-          channel: "Chemistry Channel 23",
-        },
-        {
-          path: "/dummy/path/amines/opt2",
-          thumbnail: "/images/amines_thumbnail2.jpg",
-          channel: "Chemistry Channel 24",
+          path: "https://youtu.be/t4le8uOIuZA?si=7H0_jJWeEKbdTQo_",
+          thumbnail: "https://img.youtube.com/vi/t4le8uOIuZA/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1600,14 +1537,9 @@ export const chemistry = {
       name: "Biomolecules",
       options: [
         {
-          path: "/dummy/path/biomolecules/opt1",
-          thumbnail: "/images/biomolecules_thumbnail1.jpg",
-          channel: "Chemistry Channel 25",
-        },
-        {
-          path: "/dummy/path/biomolecules/opt2",
-          thumbnail: "/images/biomolecules_thumbnail2.jpg",
-          channel: "Chemistry Channel 26",
+          path: "https://www.youtube.com/live/lkAIoq7vN6o?si=3homuvR5b2FXjpJO",
+          thumbnail: "https://img.youtube.com/vi/lkAIoq7vN6o/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1617,17 +1549,17 @@ export const chemistry = {
     {
       title: "Lakhmir Singh",
       thumbnail: lakhmir_chem_9,
-      link: "xyz",
+      link: "https://eduviti.me/not-found",
     },
     {
       title: "RS Aggarwal",
       thumbnail: rs_maths_9,
-      link: "xyz",
+      link: "https://eduviti.me/not-found",
     },
     {
       title: "Pearson",
       thumbnail: pearson,
-      link: "xyz",
+      link: "https://eduviti.me/not-found",
     },
     // Add more books here as needed
   ],
@@ -1636,45 +1568,45 @@ export const biology = {
   notes: [
     {
       name: "Reproduction",
-      path: "/StudyResources/Grade-12/biology/reproduction",
+      path: "xyz",
     },
     {
       name: "Genetics and Evolution",
-      path: "/StudyResources/Grade-12/biology/genetics-and-evolution",
+      path: "xyz",
     },
     {
       name: "Biology and Human Welfare",
-      path: "/StudyResources/Grade-12/biology/biology-and-human-welfare",
+      path: "xyz",
     },
     {
       name: "Biotechnology and its Applications",
-      path: "/StudyResources/Grade-12/biology/biotechnology-and-its-applications",
+      path: "xyz",
     },
     {
       name: "Ecology and Environment",
-      path: "/StudyResources/Grade-12/biology/ecology-and-environment",
+      path: "xyz",
     },
   ],
   pyqp: [
     {
       name: "Session 2024-2025",
-      path: "/StudyResources/Grade-12/maths/relations-and-functions",
+      path: "xyz",
     },
     {
       name: "Session 2023-2024",
-      path: "/StudyResources/Grade-12/maths/inverse-trigonometric-functions",
+      path: "xyz",
     },
     {
       name: "Session 2022-2023",
-      path: "/StudyResources/Grade-12/maths/inverse-trigonometric-functions",
+      path: "xyz",
     },
     {
       name: "Session 2021-2022",
-      path: "/StudyResources/Grade-12/maths/inverse-trigonometric-functions",
+      path: "xyz",
     },
     {
       name: "Session 2020-2021",
-      path: "/StudyResources/Grade-12/maths/inverse-trigonometric-functions",
+      path: "xyz",
     },
   ],
   question_banks: [
@@ -1811,14 +1743,9 @@ export const biology = {
       name: "Reproduction",
       options: [
         {
-          path: "/dummy/path/reproduction/opt1",
-          thumbnail: "/images/reproduction_thumbnail1.jpg",
-          channel: "Biology Channel 1",
-        },
-        {
-          path: "/dummy/path/reproduction/opt2",
-          thumbnail: "/images/reproduction_thumbnail2.jpg",
-          channel: "Biology Channel 2",
+          path: "https://www.youtube.com/live/ZfIqkLKyvBo?si=9QJZOCXQ9KJWrpTM",
+          thumbnail: "https://img.youtube.com/vi/ZfIqkLKyvBo/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1826,14 +1753,9 @@ export const biology = {
       name: "Genetics and Evolution",
       options: [
         {
-          path: "/dummy/path/genetics-and-evolution/opt1",
-          thumbnail: "/images/genetics_and_evolution_thumbnail1.jpg",
-          channel: "Biology Channel 3",
-        },
-        {
-          path: "/dummy/path/genetics-and-evolution/opt2",
-          thumbnail: "/images/genetics_and_evolution_thumbnail2.jpg",
-          channel: "Biology Channel 4",
+          path: "https://youtu.be/MKT727JMsIA?si=0ttdFgZVaXrMjMgY",
+          thumbnail: "https://img.youtube.com/vi/MKT727JMsIA/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1841,14 +1763,9 @@ export const biology = {
       name: "Biology and Human Welfare",
       options: [
         {
-          path: "/dummy/path/biology-and-human-welfare/opt1",
-          thumbnail: "/images/biology_and_human_welfare_thumbnail1.jpg",
-          channel: "Biology Channel 5",
-        },
-        {
-          path: "/dummy/path/biology-and-human-welfare/opt2",
-          thumbnail: "/images/biology_and_human_welfare_thumbnail2.jpg",
-          channel: "Biology Channel 6",
+          path: "https://www.youtube.com/live/O9PB4nrVUE4?si=us9LNh-jC8ua6PJg",
+          thumbnail: "https://img.youtube.com/vi/O9PB4nrVUE4/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1856,14 +1773,9 @@ export const biology = {
       name: "Biotechnology and its Applications",
       options: [
         {
-          path: "/dummy/path/biotechnology-and-its-applications/opt1",
-          thumbnail: "/images/biotechnology_applications_thumbnail1.jpg",
-          channel: "Biology Channel 7",
-        },
-        {
-          path: "/dummy/path/biotechnology-and-its-applications/opt2",
-          thumbnail: "/images/biotechnology_applications_thumbnail2.jpg",
-          channel: "Biology Channel 8",
+          path: "https://youtu.be/a084mlPgB7Q?si=Yg6FGIWbMnzBYbT_",
+          thumbnail: "https://img.youtube.com/vi/a084mlPgB7Q/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1871,14 +1783,9 @@ export const biology = {
       name: "Ecology and Environment",
       options: [
         {
-          path: "/dummy/path/ecology-and-environment/opt1",
-          thumbnail: "/images/ecology_environment_thumbnail1.jpg",
-          channel: "Biology Channel 9",
-        },
-        {
-          path: "/dummy/path/ecology-and-environment/opt2",
-          thumbnail: "/images/ecology_environment_thumbnail2.jpg",
-          channel: "Biology Channel 10",
+          path: "https://www.youtube.com/live/8e06q2ss-nA?si=NgeFoGSwP90wFFpu",
+          thumbnail: "https://img.youtube.com/vi/8e06q2ss-nA/hqdefault.jpg",
+          channel: "NCERT Wallah",
         },
       ],
     },
@@ -1888,17 +1795,17 @@ export const biology = {
     {
       title: "HC Verma",
       thumbnail: rd_maths_9,
-      link: "xyz",
+      link: "https://eduviti.me/not-found",
     },
     {
       title: "RS Aggarwal",
       thumbnail: rs_maths_9,
-      link: "xyz",
+      link: "https://eduviti.me/not-found",
     },
     {
       title: "Pearson",
       thumbnail: pearson,
-      link: "xyz",
+      link: "https://eduviti.me/not-found",
     },
     // Add more books here as needed
   ],

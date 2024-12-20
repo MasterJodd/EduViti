@@ -10,7 +10,7 @@ const SetsCard: React.FC<SetsCardProps> = ({ title, sets }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <div
-      className="bg-[#5a776b]/20  border border-primary/30 cursor-pointer p-4 rounded-lg shadow-lg"
+      className="bg-[#5a776b]/20  border border-primary/30  p-4 rounded-lg shadow-lg"
       onClick={() => setIsOpen(!isOpen)}
     >
       <h2 className="text-xl font-medium text-white flex items-center justify-between">

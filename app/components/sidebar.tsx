@@ -32,7 +32,7 @@ const Sidebar: React.FC<SidebarProps> = ({
     <div className="flex">
       <button
         onClick={toggleSidebar}
-        className={`mb-4 rounded-lg text-white hover:text-primary cursor-pointer bg-white/20 p-2 transition-all duration-200 fixed top-6 z-20 hover:scale-105 ${
+        className={`mb-4 rounded-lg text-white hover:text-primary  bg-white/20 p-2 transition-all duration-200 fixed top-6 z-20 hover:scale-105 ${
           isSidebarVisible ? "sm:left-[19rem] left-64" : "left-5"
         }`}
       >
@@ -81,7 +81,7 @@ const Sidebar: React.FC<SidebarProps> = ({
               }}
             >
               <a
-                className={`flex hover:scale-105 items-center px-4 cursor-pointer py-3 hover:bg-white/10 rounded-lg space-x-5 transition ${
+                className={`flex hover:scale-105 items-center px-4  py-3 hover:bg-white/10 rounded-lg space-x-5 transition ${
                   link.path === selected &&
                   "bg-white/10 border-[1px] border-primary/40"
                 }`}
@@ -101,7 +101,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         <div className="mt-auto">
           <a
             onClick={back}
-            className="flex hover:scale-105 cursor-pointer items-center px-4 py-3 mb-2 hover:bg-white/10 rounded-lg space-x-5 transition"
+            className="flex hover:scale-105  items-center px-4 py-3 mb-2 hover:bg-white/10 rounded-lg space-x-5 transition"
           >
             <svg
               width="30"

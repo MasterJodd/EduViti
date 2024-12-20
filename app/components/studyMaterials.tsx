@@ -14,7 +14,7 @@ const StudyMaterials = () => {
         {materials.map((material, index) => (
           <CardContainer
             key={index}
-            className="relative bg-white/10 hover:scale-105 border hover:cursor-pointer border-primary/50 p-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform flex flex-col lg:flex-row group"
+            className="relative bg-white/10 hover:scale-105 border hover: border-primary/50 p-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform flex flex-col lg:flex-row group"
           >
             <div className="absolute inset-0 scale-125 bg-blue-500 opacity-0 blur-3xl rounded-lg transition-opacity duration-300 group-hover:opacity-5"></div>
             <CardItem translateZ={70} translateX={10} className="min-w-[40%]">

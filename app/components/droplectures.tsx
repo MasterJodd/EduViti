@@ -26,7 +26,7 @@ const LecturesCard: React.FC<LecturesCardProps> = ({ list }) => {
       {list.map((chapter, index) => (
         <div
           key={index}
-          className="bg-[#5a776b]/20 border border-primary/30 cursor-pointer p-4 rounded-lg shadow-lg"
+          className="bg-[#5a776b]/20 border border-primary/30  p-4 rounded-lg shadow-lg"
           onClick={() => handleToggle(index)}
         >
           <h2 className="text-xl font-medium text-white flex items-center justify-between">

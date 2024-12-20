@@ -60,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = ({ homeBtn }) => {
       {/* Navigation Links */}
       <div className="relative flex items-center mx-2 md:mx-0">
         <ul
-          className="xl:flex space-x-6 cursor-pointer md:space-x-12 text-lg 2xl:text-xl  mx-auto hidden"
+          className="xl:flex space-x-6  md:space-x-12 text-lg 2xl:text-xl  mx-auto hidden"
           key="unique"
         >
           {navLinks.map((link) => (

@@ -29,7 +29,7 @@ const Hamburger = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8 text-white hover:text-primary cursor-pointer xl:hidden block"
+          className="w-8 h-8 text-white hover:text-primary  xl:hidden block"
         >
           <path
             strokeLinecap="round"

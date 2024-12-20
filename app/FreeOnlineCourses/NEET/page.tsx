@@ -27,7 +27,7 @@ const StudySection: React.FC = () => {
         } py-8 flex-grow px-6 min-h-screen flex flex-col items-center space-y-14`}
       >
         <h2 className="text-3xl font-bold mb-6 text-white mt-6">
-          Our Video Lectures
+          Our Video <span className="text-primary">Lectures</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredCourses.map((course, index) => (

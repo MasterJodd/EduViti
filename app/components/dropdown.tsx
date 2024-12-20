@@ -58,7 +58,7 @@ const Dropdown = ({ link }: DropdownProps): ReactElement => {
       {/* Dropdown Menu */}
       {isHovered && (
         <div
-          className="absolute opacity-95 duration-200 border border-primary/20 mt-6 w-48 rounded-lg shadow-lg bg-bg z-10"
+          className="absolute duration-200 border border-primary/20 mt-6 w-48 rounded-lg shadow-lg bg-bg z-10"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
